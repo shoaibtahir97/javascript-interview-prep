@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>javascript-interview-mapping-users-to-get-usernames-start</h1>
+
+    <script>
+        const users = [
+            {
+                id:1,
+                name: "John",
+                isActive: true,
+                age: 20
+            },
+            {
+                id:2,
+                name:"Jack",
+                isActive: false,
+                age: 18
+            },
+            {
+                id:3,
+                name: "Mike",
+                isActive: true,
+                age: 30
+            }
+        ];
+
+// Exercise # 1: It is to show name of the users
+
+        // My Solution
+        // users.map((item, index)=> {
+        //     return (
+        //         console.log("Name : ==>", item.name)
+        //     )
+        // })
+
+        // Instructor's Solutions
+        
+        // 1).
+        // let names = [];
+        // for(let i =0; i<users.length; i++) {
+        //     names.push(users[i].name)
+        // }
+        // console.log("names ==>",name)
+
+        // 2).
+        // let names2 =[];
+        // users.forEach(item => {
+        //     names2.push(item.name)
+        // })
+        // console.log("names2 ==>",names2)
+
+        // 3).
+        // let names3 = users.map(item => item.name)
+        // console.log("Names3 ==> ", names3)
+
+// Exercise #2: Is to show only active users
+    
+    //  1). Using For Loop
+    // names = [];
+    // for(let i = 0; i < users.length;  i++) {
+    //     if(users[i].isActive === true){
+    //         names.push(users[i].name)
+    //     }
+    // }
+    // console.log(names)
+
+    // 2). Using Map function
+
+    // let names = users.filter(user => user.isActive).map(user => user.name)
+    // console.log("Names", names)
+
+// Exercise # 3: 
+
+        for(let i = 0; i < users.length; i++) {
+            return users[i].sort(age);
+
+        }
+    </script>
+</body>
+</html>
